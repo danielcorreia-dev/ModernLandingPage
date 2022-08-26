@@ -1,5 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+#hero {
+    min-width: 100%;
+    height: 66vh;
+    background-image: url(./assets/header-bg.png);
+    background-color: #4D3664;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu li {
+    padding: 0 24px;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color .3s ease;
+}
+
+.navbar-cta {
+    padding: 12px 24px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: white;
+    color: #4D3664;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.content h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.content p {
+    font-size: 1.1em;
+    color: #CFCBF1;
+}
+
+.textcontent {
+    margin-bottom: 16px;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 16px 24px;
+    border-radius: 30px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #4D3664;
+    display: flex;
+    align-items: center;
+}
+
+.icon-cta {
+    margin-right: 12px;
+}
+
+.win {
+    margin: 24px 24px 0px 0px ;
+}
+
+.web {
+    margin-top: 24px;
+    padding: 17px 30px;
+    color: #CFCBF1;
+    background-color: #0e0e0e;
 }
