@@ -20,6 +20,11 @@ html {
     align-items: center;
 }
 
+@media(max-width: 1366px){
+    #hero {
+        height: 100vh; 
+    }
+}
 .navbar {
     width: 1280px;
     height: 100px;
@@ -49,6 +54,10 @@ html {
     transition: color .3s ease;
 }
 
+.navbar-menu li a:hover {
+    color: #CFCBF1;
+}
+
 .navbar-cta {
     padding: 12px 24px;
     font-weight: 500;
@@ -56,6 +65,13 @@ html {
     border-radius: 12px;
     background-color: white;
     color: #4D3664;
+    transition: background-color .3s ease, color .3s ease ;
+}
+
+.navbar-cta:hover{
+    background-color: #4D3664;
+    color: white;
+    box-shadow: #1e1e1e5c 2px 2px 5px;
 }
 
 .content {
@@ -101,7 +117,9 @@ html {
     color: #4D3664;
     display: flex;
     align-items: center;
+    transition: all .2s ease;
 }
+
 
 .icon-cta {
     margin-right: 12px;
@@ -109,6 +127,12 @@ html {
 
 .win {
     margin: 24px 24px 0px 0px ;
+    transition: all .5 ease;
+}
+
+.cta-button.win:hover{
+    color: white;
+    background-color: #0e0e0e;
 }
 
 .web {
@@ -213,7 +237,7 @@ html {
 }
 
 footer {
-    height: 40vh;
+    padding-bottom: 20px;
     background-color: #0e0e0e;
 }
 
@@ -228,7 +252,7 @@ footer {
 footer hr {
     display: block;
     width: 80%;
-    border-radius: 100%;
+    /* margin-bottom: px; */
 }
 
 .logoplacement {
@@ -250,6 +274,7 @@ footer hr {
 
 .row {
     color: #CFCBF1;
+    font-size: 14px;
     text-align: right;
     line-height: 1.8;
 }
